@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../styles/globals.css";
-import {Header} from "@/app/header";
+import "@/src/styles/globals.css";
+import {Header} from "@/src/app/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,9 @@ export const metadata: Metadata = {
 function Footer() {
   return (
     <footer>
-      <p>&#169; Osman Ahmed</p>
+      <div className={'container'}>
+        <p>Copyright &#169; 2024 Osman Ahmed</p>
+      </div>
     </footer>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Header() {
   return (
     <header>
-      <nav className='flex justify-between'>
+      <nav className='flex justify-between container'>
         <div>
           <Link href='/'>onahmed</Link>
         </div>
