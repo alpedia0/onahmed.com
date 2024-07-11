@@ -1,3 +1,9 @@
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contributions - Osman Ahmed',
+}
+
 export default function ContributionsPage() {
   return (
     <div className={'container'}>

@@ -1,3 +1,9 @@
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects - Osman Ahmed',
+}
+
 export default function ProjectsPage() {
   return (
     <div className={'container'}>
