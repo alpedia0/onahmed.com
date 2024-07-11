@@ -1,7 +1,8 @@
 export default function HomePage() {
   return (
-      <div>
+    <div>
+      <h1>Osman Ahmed</h1>
 
-      </div>
+    </div>
   );
 }
