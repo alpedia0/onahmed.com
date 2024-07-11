@@ -1,8 +1,14 @@
 export default function HomePage() {
   return (
     <div className={'container'}>
-      <h1>Osman Ahmed</h1>
+      <h1 className={'text-3xl font-semibold'}>Osman Ahmed</h1>
 
+      <div>
+        <ul>
+          <li>GitHub</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
     </div>
   );
 }
