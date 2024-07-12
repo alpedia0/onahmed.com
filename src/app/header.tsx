@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import {twMerge} from "tailwind-merge";
+import Image from 'next/image'
+import contrastSvg from '@/public/contrast.svg';
+import languageSvg from '@/public/language.svg';
 
 type NavPath = {
   href: string;
@@ -53,8 +56,15 @@ export function Header() {
         </div>
 
         <ul className={'flex gap-x-3'}>
-          <li><button className={'px-2 py-1'}>Theme</button></li>
-          <li><button className={'px-2 py-1'}>Language</button></li>
+          <li>
+            <button className={'rounded border border-transparent p-2'}>
+              <Image src={contrastSvg} alt={'Contrast'} height={24} width={24}/>
+            </button></li>
+          <li>
+            <button className={'rounded border border-transparent p-2'}>
+              <Image src={languageSvg} alt={'Contrast'} height={24} width={24}/>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
