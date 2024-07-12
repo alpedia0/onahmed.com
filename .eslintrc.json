@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["@stylistic"],
+  "settings": {
+    "tailwindcss": {
+      "callees": ["classnames", "className", "clsx", "ctl", "twMerge"],
+      "config": "tailwind.config.ts"
+    }
+  },
+  "rules": {
+    "@stylistic/indent": ["error", 2]
+  }
 }
