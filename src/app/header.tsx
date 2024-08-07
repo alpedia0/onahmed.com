@@ -42,7 +42,7 @@ export function Header() {
 
   return (
     <header className={'h-[60px]'}>
-      <nav className='container flex h-full items-center justify-between'>
+      <nav className='container flex h-full items-center'>
         <div className={'flex items-center gap-x-24'}>
           <div><Link href='/' className={'text-3xl font-semibold'}>cd /</Link></div>
           <ul className='flex gap-x-4 text-lg'>
@@ -51,11 +51,6 @@ export function Header() {
             ))}
           </ul>
         </div>
-
-        <ul className={'flex gap-x-3'}>
-          <li><button className={'px-2 py-1'}>Theme</button></li>
-          <li><button className={'px-2 py-1'}>Language</button></li>
-        </ul>
       </nav>
     </header>
   );
